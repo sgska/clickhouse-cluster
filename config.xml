@@ -24,6 +24,7 @@
     <uncompressed_cache_size>8589934592</uncompressed_cache_size>
     <mark_cache_size>5368709120</mark_cache_size>
 
+
     <path>/var/lib/clickhouse/</path>
     <tmp_path>/var/lib/clickhouse/tmp/</tmp_path>
     <user_files_path>/var/lib/clickhouse/user_files/</user_files_path>
@@ -41,6 +42,8 @@
                     <host>clickhouse01</host>
                     <port>9000</port>
                 </replica>
+            </shard>
+            <shard>
                 <replica>
                     <host>clickhouse02</host>
                     <port>9000</port>
@@ -51,6 +54,8 @@
                     <host>clickhouse03</host>
                     <port>9000</port>
                 </replica>
+            </shard>
+            <shard>
                 <replica>
                     <host>clickhouse04</host>
                     <port>9000</port>
